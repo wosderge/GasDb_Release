@@ -25,12 +25,7 @@ namespace GasDb
         /// <returns>書き込み成功時はobjectId、失敗時はnullが返ります</returns>
         public async static UniTask<string> SaveAsync<T>(T target, string sheetName=null) where T : GasDbObjectBase
         {
-            /* if (!string.IsNullOrEmpty(target.sheetName) && target.sheetName != sheetName)
-             {
-                 GasDbUtility.LogError($"SheetName is not match. {target.sheetName} != {sheetName}");
-                 return null;
-             }*/
-            if (!string.IsNullOrEmpty(sheetName)) {
+            if (string.IsNullOrEmpty(sheetName)) {
                 sheetName = target.sheetName;
             }
 
