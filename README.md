@@ -6,7 +6,7 @@ NCMBに近い操作感を意識しています。
 
 ## 利用方法
 詳しくは下記note記事に記載しております。   
-「ここにnote記事のアドレスを置く」
+https://note.com/metaformingpro/n/nfd721ce75857
 
 ざっと説明すると  
 ・Scriptフォルダ内のデータをunityプロジェクトに追加  
